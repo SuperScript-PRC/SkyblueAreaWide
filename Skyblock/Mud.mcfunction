@@ -8,7 +8,7 @@ execute as @a[tag=!robot] at @s if block ~~~ water if block ~~-1~ dirt run setbl
 execute as @a[tag=!robot] at @s if block ~~-0.5~ minecraft:mud if block ~~-1.5~ minecraft:scaffolding run tag @s add is.mud
 # #[1]
 setblock ~~~1 minecraft:chain_command_block ["facing_direction"=3]
-s
+say "THIS IS EMPTY"
 setblock ~~~-1 air
 execute as @e[tag=is.mud] run scoreboard players random @s is:random 1 200
 execute as @e[tag=is.mud,scores={is:random=1..15}] at @s run structure load 掉落物小麦种子 ~~~

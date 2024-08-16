@@ -7,7 +7,7 @@
 execute as @a[tag=!robot] at @s if block ~~-1~ minecraft:gravel if block ~~-2~ minecraft:scaffolding run tag @s add is.gravel
 # #(连锁)[1]
 setblock ~~~1 minecraft:chain_command_block ["facing_direction"=3]
-s
+say "THIS IS EMPTY"
 setblock ~~~-1 air
 execute as @e[tag=is.gravel] run scoreboard players random @s is:random 1 300
 execute as @e[tag=is.gravel,scores={is:random=1..4}] at @s run structure load 掉落物钻石 ~~~
