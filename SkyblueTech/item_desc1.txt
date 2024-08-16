@@ -1,0 +1,476 @@
+制作物品
+坐标 19 -58 18
+
+物品描述
+ID gunpowder
+名称 §r§7铁粉
+特殊值 601
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+
+物品描述
+ID glowstone_dust
+名称 §r§6铜粉
+特殊值 602
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID glowstone_dust
+名称 §r§e金粉
+特殊值 603
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID iron_ingot
+名称 §r§7§l钢锭
+特殊值 504
+备注 §r
+备注 §r§7强度较高， 适合制作一些强化材料和强化机械
+备注 §9Skyblue Tech
+
+物品描述
+ID gunpowder
+名称 §r§7§l钢粉
+特殊值 604
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID iron_ingot
+名称 §r§f锡锭
+特殊值 505
+备注 §r
+备注 §r§7质轻且不易被腐蚀， 是大部分配件的材料
+备注 §9Skyblue Tech
+
+物品描述
+ID sugar
+名称 §r§f锡粉
+特殊值 605
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID netherbrick
+名称 §r§9铅锭
+特殊值 506
+备注 §r
+备注 §r§7质重抗辐射且不易被腐蚀， 适合制作一些重型机械或反应堆机器
+备注 §9Skyblue Tech
+
+物品描述
+ID gunpowder
+名称 §r§9铅粉
+特殊值 606
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID iron_ingot
+名称 §r§b银锭
+特殊值 508
+备注 §r
+备注 §r§7导电性能较好， 适合制作一些精密机械
+备注 §9Skyblue Tech
+
+物品描述
+ID sugar
+名称 §r§b银粉
+特殊值 608
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID copper_ingot
+名称 §r§p镍锭
+特殊值 509
+备注 §r§7致密金属， 不适合作为机器材料但可以制作成合金
+备注 §9Skyblue Tech
+
+物品描述
+ID glowstone_dust
+名称 §r§p镍粉
+特殊值 609
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID gold_ingot
+名称 §r§e琥珀金锭
+特殊值 510
+附魔光效
+备注 §r§7导电性能极好， 适合制作一些处理器元件等
+备注 §9Skyblue Tech
+
+物品描述
+ID copper_ingot
+名称 §r§b青铜锭
+特殊值 511
+附魔光效
+备注 §r§7致密耐腐蚀， 适合做一些通用机械
+备注 §9Skyblue Tech
+
+物品描述
+ID iron_ingot
+名称 §r§7§l殷钢锭
+特殊值 512
+附魔光效
+备注 §r§7强度高耐腐蚀， 适合做一些通用机械
+备注 §9Skyblue Tech
+
+物品描述
+ID copper_ingot
+名称 §r§b康铜锭
+特殊值 513
+附魔光效
+备注 §r§7致密耐腐蚀， 适合做一些强度高的机械
+备注 §9Skyblue Tech
+
+物品描述
+ID netherite_ingot
+名称 §r§d强化合金
+特殊值 513
+附魔光效
+备注 §r§7强度极高的金属，是各种高强度元件的材料
+备注 §9Skyblue Tech
+
+物品描述
+ID netherbrick
+名称 §r§9钴锭
+特殊值 513
+附魔光效
+备注 §r§7强度较好且耐腐蚀， 适合制作一些处理型机械
+备注 §9Skyblue Tech
+
+物品描述
+ID gunpowder
+名称 §r§9钴粉
+特殊值 613
+备注 §r
+备注 §r§7用于制造金属锭或合金等材料
+备注 §9Skyblue Tech
+
+物品描述
+ID ward_armor_trim_smithing_template
+特殊值 701
+名称 §r§a基础控制电路
+备注 §r
+备注 §r§7机器的核心， 同时也是部分元件的原材料之一。
+备注 §9Skyblue Tech
+
+物品描述
+ID host_armor_trim_smithing_template
+特殊值 702
+名称 §r§c强化控制电路
+备注 §r
+备注 §r§7机器的核心， 同时也是部分元件的原材料之一。
+备注 §9Skyblue Tech
+
+物品描述
+ID tide_armor_trim_smithing_template
+特殊值 703
+名称 §r§s晶化控制电路
+备注 §r
+备注 §r§7机器的核心， 同时也是部分元件的原材料之一。
+备注 §9Skyblue Tech
+
+物品描述
+ID dune_armor_trim_smithing_template
+特殊值 704
+名称 §r§u末影控制电路
+备注 §r
+备注 §r§7机器的核心， 同时也是部分元件的原材料之一。
+备注 §9Skyblue Tech
+
+物品描述
+ID flint
+特殊值 705
+名称 §r§7§l普通钻尖
+备注 §r
+备注 §r§7可用于制作挖掘型机械。
+备注 §9Skyblue Tech
+
+物品描述
+ID flint
+特殊值 706
+名称 §r§7§l强化钻尖
+附魔光效
+备注 §r§7可用于制作挖掘型机械。
+备注 §9Skyblue Tech
+
+物品描述
+ID prismarine_crystals
+特殊值 707
+名称 §r§7§l普通锯片
+备注 §r
+备注 §r§7可用于制作切割型机械。
+备注 §9Skyblue Tech
+
+物品描述
+ID prismarine_crystals
+特殊值 708
+附魔光效
+名称 §r§7§l强化锯片
+备注 §r§7可用于制作切割型机械。
+备注 §9Skyblue Tech
+
+物品描述
+ID charcoal
+名称 §r§f碳板
+特殊值 709
+备注 §r
+备注 §r§7耐腐蚀切轻便， 可作为合成材料。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§d升级卡： §c同步运转马达
+ID netherite_upgrade_smithing_template
+特殊值 710
+附魔光效
+备注 §r
+备注 §r§7[§bi§7] §b提升机器的工作效率， 但也会增大能耗。
+备注 §r§7[§6i§7] §6一台机器只能安装一个升级。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§d升级卡： §6电磁反馈线圈
+ID rib_armor_trim_smithing_template
+特殊值 711
+附魔光效
+备注 §r
+备注 §r§7[§bi§7] §b提升机器利用能量的效率， 降低能耗。
+备注 §r§7[§6i§7] §6一台机器只能安装一个升级。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§d升级卡
+ID silence_armor_trim_smithing_template
+特殊值 712
+附魔光效
+备注 §r
+备注 §r§b置于机器内生效。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§d升级卡
+ID sentry_armor_trim_smithing_template
+特殊值 713
+附魔光效
+备注 §r
+备注 §r§b置于机器内生效。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§d升级卡： §e电池堆组扩增
+ID wayfinder_armor_trim_smithing_template
+特殊值 714
+附魔光效
+备注 §r
+备注 §r§7[§bi§7] §b提升电池的能量容量。
+备注 §r§7[§6i§7] §6一台机器只能安装一个升级。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§b§l无线能源天线
+ID redstone_torch
+特殊值 715
+附魔光效
+备注 §r
+备注 §r§7多方块机器能源输送的核心部件
+备注 §r§7每个机器的核心矿车里都需要放置该物品
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§c电阻加热底座
+ID music_disc_relic
+特殊值 716
+备注 §r
+备注 §r§7[§ci§7] §6热力功率等级： §a1
+备注 §r§7可用于产生热量， 适用于发热设备。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§2粗钅由矿石
+特殊值 717
+ID turtle_shell_piece
+备注 §r
+备注 §r§7未经处理的铀， 在离心等步骤后可制成燃料铀。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§2精钅由块
+特殊值 718
+ID turtle_shell_piece
+附魔光效
+备注 §r§7经过离心提纯的铀， 可以被制成燃料棒。
+备注 §r§c小心辐射！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§aUranium燃料棒
+特殊值 719
+ID echo_shard
+附魔光效
+备注 §r§7可用于反应堆发电的燃料棒。
+备注 §r§c小心辐射！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§c高频电磁加热底座
+ID music_disc_blocks
+特殊值 720
+备注 §r
+备注 §r§7[§ci§7] §6热力功率等级： §a2
+备注 §r§7可用于产生热量， 适用于发热设备。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§5中子辐射板
+ID netherite_scrap
+特殊值 721
+备注 §r
+备注 §r§7阻挡和减弱辐射射线。
+备注 §r§7可应用于反应堆中。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§5加厚中子辐射板
+ID netherite_scrap
+特殊值 722
+附魔光效
+备注 §r§7阻挡和减弱辐射射线的能力更强。
+备注 §r§7可应用于反应堆中。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§a枯竭Uranium燃料棒
+特殊值 723
+ID echo_shard
+备注 §r
+备注 §r§7枯竭的燃料棒， 也许还有作用...
+备注 §r§c小心辐射！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§n钋球
+特殊值 724
+ID clay_ball
+附魔光效
+备注 §r§7反应堆副产物， 也是合成原料。
+备注 §r§c小心辐射！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§b太阳能模块： §a光合升级
+特殊值 725
+ID ender_eye
+附魔光效
+备注 §r§7[§ai§7] §7使得...太阳能能进行..光合作用？！
+备注 §r§7[§bi§7] §b使得太阳能可以利用多余光能产出糖类。
+备注 §r§7[§6i§7] §6一台太阳能只能安装一个该模块。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§c红外线聚焦加热底座
+ID music_disc_chirp
+特殊值 726
+备注 §r
+备注 §r§7[§ci§7] §6热力功率等级： §a3
+备注 §r§7可用于产生热量， 适用于发热设备。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§5不稳定量子碎片
+ID disc_fragment_5
+特殊值 727
+附魔光效
+备注 §5§l处于不稳定态的物质。§r
+备注 §r§7可经过充能得到较为稳定的形态。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§t半稳定量子碎片
+ID disc_fragment_5
+特殊值 728
+备注 §r
+备注 §5§l似乎仍处于不稳定态。§r
+备注 §r§7可转换为稳定态的实体物质。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§b电动锄
+ID iron_hoe
+特殊值 729
+备注 §r
+备注 §r§7消耗电能进行耕种， 可用于种植类设备。
+备注 §r§4请不要直接用于挖掘！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§b电动镐
+ID iron_pickaxe
+特殊值 730
+备注 §r
+备注 §r§7消耗电能进行挖掘， 可用于挖掘类设备。
+备注 §r§4请不要直接用于挖掘！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§b电动斧
+ID iron_axe
+特殊值 730
+备注 §r
+备注 §r§7消耗电能进行砍伐， 可用于伐木类设备。
+备注 §r§4请不要直接用于挖掘！
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§bCD-ROM
+ID music_disc_cat
+特殊值 731
+备注 §r
+备注 §r§f软😰： 裕😰-中😰😰网V😰D
+备注 §r§7古早的光碟， 不知道还能否被正常读取。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§4高热电位发生器
+ID brick
+特殊值 732
+备注 §r
+备注 §r§7利用高温与环境的温差产生电位差， 被应用于高热发电机械中。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§a末影晶体
+ID emerald
+特殊值 733
+附魔光效
+备注 §r§7散发着谐振能量的晶体， 可用于制作谐振合金。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§5谐振合金
+ID gold_ingot
+特殊值 734
+附魔光效
+备注 §r§7散发着谐振能量的合金， 神秘的合金材料。
+备注 §9Skyblue Tech
+
+物品描述
+名称 §r§f碳粉
+ID black_dye
+备注 §r
+备注 §r§7由木炭或煤炭打成的粉， 可用于材料的制作。
+备注 §9Skyblue Tech
