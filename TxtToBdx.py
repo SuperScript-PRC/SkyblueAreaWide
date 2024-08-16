@@ -1,4 +1,4 @@
-import bdx_work_shop as bdx_work_shop, re, os, json
+import bdx_work_shop, re, os, json
 
 class MCCmd2Bdx:
     """# MCCmd To Bdx
@@ -102,6 +102,7 @@ class MCCmd2Bdx:
         auto_cond = True
     ):
         "2D自动排列命令方块， 但是已弃用"
+        # @SuperScript: 还是太粗糙了...
         curr_pos = (0, 0, 0)
         cv = self.canvas
         current_num = 0
