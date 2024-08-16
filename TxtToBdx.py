@@ -294,12 +294,11 @@ def test_bdx(path: str):
     op = MCCmd2Bdx()
     op.snake_folding_cmds(arr, first_dir, sec_dir, max_len).dump(path.replace("mcfunction", "bdx"))
 
-while 1:
-    for now_dir in os.listdir():
-        if not os.path.isdir(now_dir):
-            continue
-        for i in os.listdir(now_dir):
-            if i.endswith("mcfunction"):
-                print()
-                test_bdx(os.path.join(now_dir, i))
-    input("Press Enter to set next..")
+
+for now_dir in os.listdir():
+    if not os.path.isdir(now_dir):
+        continue
+    for i in os.listdir(now_dir):
+        if i.endswith("mcfunction"):
+            print()
+            test_bdx(os.path.join(now_dir, i))

@@ -59,6 +59,8 @@ execute as @e[scores={st:mc_type=4},hasitem={item=minecraft:glowstone_dust,data=
 execute as @e[scores={st:mc_type=4},hasitem={item=minecraft:gunpowder,data=613,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 8
 # 配方: 钢粉-钢锭
 execute as @e[scores={st:mc_type=4},hasitem={item=minecraft:gunpowder,data=604,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 9
+# 电力挖石机
+execute as @e[scores={st:mc_type=11}] at @s if block ~~3~ minecraft:cobblestone run scoreboard players set @s st:runid_tmp 1
 # 感应炉
 # 配方: 1x锡锭+2x铜锭-3x青铜锭
 execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:iron_ingot,data=505,slot=0,quantity=1,location=slot.inventory}] if entity @e[y=~2,hasitem={item=minecraft:copper_ingot,data=0,slot=0,quantity=2,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 1
@@ -72,8 +74,6 @@ execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:copper_ingot,data=0
 execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:gold_ingot,data=0,slot=0,quantity=1,location=slot.inventory}] if entity @e[y=~2,hasitem={item=minecraft:iron_ingot,data=508,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 5
 # 配方: 1x琥珀金锭+1x末影晶体-1x谐振合金
 execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:gold_ingot,data=510,slot=0,quantity=1,location=slot.inventory}] if entity @e[y=~2,hasitem={item=minecraft:emerald,data=733,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 6
-# 电力挖石机
-
 # 最终tick统计
 # 如果加工中途物品发生更换, 即停止加工
 execute as @e[scores={st:runid_tmp=1..}] unless score @s st:runid_tmp = @s st:runid run scoreboard players set @s st:mc_tick 0

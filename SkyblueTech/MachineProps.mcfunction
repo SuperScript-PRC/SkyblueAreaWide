@@ -47,7 +47,7 @@ scoreboard players set @e[scores={st:mc_type=9}] st:mc_stick 40
 scoreboard players set @e[scores={st:mc_type=9}] st:mc_mcp 18
 scoreboard players set @e[scores={st:mc_type=9}] st:mc_srf 300
 # 地热发电机
-scoreboard players set @e[scores={st:mc_type=10}] st:gen_rfp 110
+scoreboard players set @e[scores={st:mc_type=10}] st:gen_rfp 90
 # 电力挖石机
 scoreboard players set @e[scores={st:mc_type=11}] st:mc_stick 40
 # #[2]
