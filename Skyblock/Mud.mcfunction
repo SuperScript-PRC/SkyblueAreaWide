@@ -1,4 +1,7 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
+#
+# 筛泥巴
+#
 # #(循环)#{10}
 execute as @a[tag=!robot] at @s if block ~~~ water if block ~~-1~ dirt run setblock ~~-1~ mud
 # #(连锁)

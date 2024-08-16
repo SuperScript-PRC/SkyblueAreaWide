@@ -1,6 +1,9 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
+#
+# 筛砂砾 (断链模式)
+#
 # #(循环)#{10}
-# 检测到砂砾在脚手架上掉落了
+# 检测
 execute as @a[tag=!robot] at @s if block ~~-1~ minecraft:gravel if block ~~-2~ minecraft:scaffolding run tag @s add is.gravel
 # #(连锁)[1]
 setblock ~~~1 minecraft:chain_command_block ["facing_direction"=3]

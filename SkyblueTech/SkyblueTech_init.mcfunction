@@ -1,4 +1,7 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
+#
+# 初始化计分板
+#
 # #(脉冲)$1
 scoreboard objectives add st:mc_type dummy st机器种类
 # #(连锁)

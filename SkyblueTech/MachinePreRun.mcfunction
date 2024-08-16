@@ -1,4 +1,7 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
+#
+# 机器检查配方, 并进入制作状态
+#
 # #(循环)#{4}
 scoreboard players set @e[scores={st:runid_tmp=1..}] st:runid_tmp 0
 # #(连锁)

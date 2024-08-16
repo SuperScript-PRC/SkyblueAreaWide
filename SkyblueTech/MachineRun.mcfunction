@@ -1,8 +1,11 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "20"}
+#
+# 机器运行一次
+#
 # #(循环)#{4}
 tag @e[tag=st.tick_ok] remove st.tick_ok
 # #(连锁)
-# 判定机器是否可以生产原料
+# 判定机器是否可以生产
 execute as @e[tag=st.machine,scores={st:mc_tick=1..}] if score @s st:mc_tick > @s st:mc_stick run tag @s add st.tick_ok
 # 打粉机
 # 配方表

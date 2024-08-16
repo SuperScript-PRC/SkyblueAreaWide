@@ -1,4 +1,7 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
+#
+# 机器的各个属性
+#
 # #(循环)#{80}
 scoreboard players add @e[scores={st:mc_type=1..}] st:mc_rf 0
 # #(连锁)

@@ -1,5 +1,8 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "20"}
-# #(循环)#{40}#$1
+#
+# 机器多方科结构判定
+#
+# #(循环)#{40}
 tag @e[tag=st.machine] remove st.machine
 # #(连锁)
 tag @e[type=minecraft:chest_minecart,hasitem={item=minecraft:redstone_torch,data=715}] add st.machine
