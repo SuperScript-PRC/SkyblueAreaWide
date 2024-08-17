@@ -49,10 +49,15 @@ scoreboard players set @e[scores={st:mc_type=9}] st:mc_srf 300
 # 地热发电机
 scoreboard players set @e[scores={st:mc_type=10}] st:gen_rfp 90
 # 电力挖石机
-scoreboard players set @e[scores={st:mc_type=11}] st:mc_stick 40
+scoreboard players set @e[scores={st:mc_type=11}] st:mc_stick 20
 # #[2]
-scoreboard players set @e[scores={st:mc_type=11}] st:mc_mcp 35
-scoreboard players set @e[scores={st:mc_type=11}] st:mc_srf 450
+scoreboard players set @e[scores={st:mc_type=11}] st:mc_mcp 25
+scoreboard players set @e[scores={st:mc_type=11}] st:mc_srf 320
+# 感应炉
+scoreboard players set @e[scores={st:mc_type=12}] st:mc_stick 20
+# #[2]
+scoreboard players set @e[scores={st:mc_type=12}] st:mc_mcp 35
+scoreboard players set @e[scores={st:mc_type=12}] st:mc_srf 450
 # 加速卡
 
 execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick /= @s st:speedup
