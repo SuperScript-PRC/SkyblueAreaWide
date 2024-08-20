@@ -52,6 +52,24 @@ execute as @e[scores={st:mc_type=12,st:runid=6},tag=st.tick_ok] at @s run clone 
 execute as @e[scores={st:mc_type=12,st:runid=1..},tag=st.tick_ok] at @s run particle minecraft:egg_destroy_emitter ~~~
 execute as @e[scores={st:mc_type=12,st:runid=1..},tag=st.tick_ok] at @s run playsound dig.sand @a[r=20]
 execute as @e[scores={st:mc_type=12,st:runid=1..},tag=st.tick_ok] run replaceitem entity @s slot.inventory 0 minecraft:air
+execute as @e[scores={st:mc_type=12,st:runid=1..},tag=st.tick_ok] run replaceitem entity @e[y=~2,c=1,type=minecraft:hopper_minecart] slot.inventory 0 minecraft:air
+# 电力筛子
+execute as @e[scores={st:mc_type=13,st:runid=1..},tag=st.tick_ok] run scoreboard players random @s st:cache1 1 300
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=1..3},tag=st.tick_ok] at @s run structure load 掉落物钻石 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=4},tag=st.tick_ok] at @s run structure load 掉落物绿宝石 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=5..12},tag=st.tick_ok] at @s run structure load 掉落物青金石 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=13..24},tag=st.tick_ok] at @s run structure load 掉落物红石 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=25..31},tag=st.tick_ok] at @s run structure load 掉落物粗金 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=32..42},tag=st.tick_ok] at @s run structure load 掉落物粗铁 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=43..51},tag=st.tick_ok] at @s run structure load 掉落物粗铜 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=52..66},tag=st.tick_ok] at @s run structure load 掉落物煤炭 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=67..76},tag=st.tick_ok] at @s run structure load 掉落物锡粉 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=77..84},tag=st.tick_ok] at @s run structure load 掉落物铅粉 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=85..89},tag=st.tick_ok] at @s run structure load 掉落物银粉 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..,st:cache1=90..95},tag=st.tick_ok] at @s run structure load 掉落物镍粉 ~~-1~
+execute as @e[scores={st:mc_type=13,st:runid=1..},tag=st.tick_ok] at @s run playsound dig.gravel @a[r=20]
+execute as @e[scores={st:mc_type=13,st:runid=1..},tag=st.tick_ok] run replaceitem entity @s slot.inventory 0 minecraft:air
+execute as @e[scores={st:mc_type=13,st:runid=1..},tag=st.tick_ok] at @s run particle minecraft:knockback_roar_particle ~~-1~
 # 完全收尾
 scoreboard players set @e[tag=st.tick_ok] st:mc_tick 0
 scoreboard players set @e[tag=st.tick_ok] st:rs_cd 0

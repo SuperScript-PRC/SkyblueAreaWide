@@ -12,6 +12,7 @@ execute as @e[tag=st.rs_trig,scores={st:mc_type=4}] at @s run scoreboard players
 execute as @e[tag=st.rs_trig,scores={st:mc_type=9}] at @s run scoreboard players set @s st:rs_place 1
 execute as @e[tag=st.rs_trig,scores={st:mc_type=10}] at @s run scoreboard players set @s st:rs_place 1
 execute as @e[tag=st.rs_trig,scores={st:mc_type=12}] at @s run scoreboard players set @s st:rs_place 2
+execute as @e[tag=st.rs_trig,scores={st:mc_type=13}] at @s run scoreboard players set @s st:rs_place 1
 execute as @e[scores={st:rs_place=1}] at @s run setblock ~~2~ minecraft:redstone_block
 execute as @e[scores={st:rs_place=2}] at @s run setblock ~~3~ minecraft:redstone_block
 # #{2}

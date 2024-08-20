@@ -16,6 +16,8 @@ execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,d
 execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=2}] run scoreboard players set @s st:speedup 3
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=1}] run scoreboard players set @s st:energyd 75
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=2}] run scoreboard players set @s st:energyd 55
+# 火力发电机
+scoreboard players add @e[scores={st:mc_type=2}] st:heatgen_cd 0
 # 打粉机
 scoreboard players set @e[scores={st:mc_type=2}] st:mc_stick 25
 # #[2]
@@ -58,6 +60,11 @@ scoreboard players set @e[scores={st:mc_type=12}] st:mc_stick 20
 # #[2]
 scoreboard players set @e[scores={st:mc_type=12}] st:mc_mcp 35
 scoreboard players set @e[scores={st:mc_type=12}] st:mc_srf 450
+# 自动筛子
+scoreboard players set @e[scores={st:mc_type=13}] st:mc_stick 18
+# #[2]
+scoreboard players set @e[scores={st:mc_type=13}] st:mc_mcp 28
+scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 400
 # 加速卡
 
 execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick /= @s st:speedup
