@@ -17,7 +17,7 @@ execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,d
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=1}] run scoreboard players set @s st:energyd 75
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=2}] run scoreboard players set @s st:energyd 55
 # 火力发电机
-scoreboard players add @e[scores={st:mc_type=2}] st:heatgen_cd 0
+scoreboard players add @e[scores={st:mc_type=6}] st:heatgen_cd 0
 # 打粉机
 scoreboard players set @e[scores={st:mc_type=2}] st:mc_stick 25
 # #[2]

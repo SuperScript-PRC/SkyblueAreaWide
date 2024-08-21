@@ -21,6 +21,9 @@ scoreboard players set @e[tag=st.machine] st:mc_type 0
 # 电池
 tag @e[tag=st.dc] remove st.dc
 execute as @e[type=chest_minecart] at @s if block ~~-1~ minecraft:lit_redstone_lamp run tag @s add st.dc
+# 物品收集器
+tag @e[tag=st.collector] remove st.collector
+execute as @e[type=hopper_minecart] at @s if block ~~-1~ minecraft:hopper if block ~~1~ minecraft:cauldron run tag @s add st.collector
 # 太阳能电池板=1
 execute as @e[tag=st.machine] at @s if blocks 123456 115 123456 123458 118 123458 ~-1~-4~-1 masked run scoreboard players set @s st:mc_type 1
 execute as @e[tag=st.machine,scores={st:mc_type=0}] at @s if blocks 123459 115 123456 123461 118 123458 ~-1~-4~-1 masked run scoreboard players set @s st:mc_type 1
@@ -53,8 +56,5 @@ execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=1..},hasitem={item=
 # 感应炉=12
 execute as @e[tag=st.machine,scores={st:mc_type=0,st:heater=1..,st:circuit=1..}] at @s if block ~~-1~ minecraft:dropper ["facing_direction"=1] if block ~~1~ minecraft:blast_furnace if block ~~3~ minecraft:target if entity @e[y=~2,r=1,type=minecraft:hopper_minecart] if blocks ~~-1~ ~~-1~ 123456 100 123456 all run scoreboard players set @s st:mc_type 12
 # 自动筛矿机=13
-execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123465 115 123461 123467 118 123461 ~-1~-2~-1 masked run scoreboard players set @s st:mc_type 13
-execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123468 115 123460 123468 118 123462 ~~-2~-1 masked run scoreboard players set @s st:mc_type 13
-
-
-execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123465 115 123461 123467 118 123461 ~-1~-2~-1 masked run scoreboard players set @s st:mc_type 13
+execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123465 115 123461 123467 119 123461 ~-1~-2~ masked run scoreboard players set @s st:mc_type 13
+execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123468 115 123460 123468 119 123462 ~~-2~-1 masked run scoreboard players set @s st:mc_type 13

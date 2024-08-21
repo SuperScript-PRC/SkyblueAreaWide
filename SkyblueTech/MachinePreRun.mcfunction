@@ -69,7 +69,7 @@ execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:iron_ingot,data=504
 # 配方: 1x铜锭+1x镍锭-2x康铜锭
 execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:copper_ingot,data=0,slot=0,quantity=1,location=slot.inventory}] at @s if entity @e[y=~2,r=1,type=minecraft:hopper_minecart,c=1,hasitem={item=minecraft:copper_ingot,data=509,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 3
 # 配方: 1x铁锭+1x碳粉-1x钢锭
-execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:copper_ingot,data=0,slot=0,quantity=1,location=slot.inventory}] at @s if entity @e[y=~2,r=1,type=minecraft:hopper_minecart,c=1,hasitem={item=minecraft:black_dye,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 4
+execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:iron_ingot,data=0,slot=0,quantity=1,location=slot.inventory}] at @s if entity @e[y=~2,r=1,type=minecraft:hopper_minecart,c=1,hasitem={item=minecraft:black_dye,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 4
 # 配方: 1x金锭+1x银锭-1x琥珀金锭
 execute as @e[scores={st:mc_type=12},hasitem={item=minecraft:gold_ingot,data=0,slot=0,quantity=1,location=slot.inventory}] at @s if entity @e[y=~2,r=1,type=minecraft:hopper_minecart,c=1,hasitem={item=minecraft:iron_ingot,data=508,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 5
 # 配方: 1x琥珀金锭+1x末影晶体-1x谐振合金
