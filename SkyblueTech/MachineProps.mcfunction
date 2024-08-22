@@ -29,10 +29,10 @@ scoreboard players set @e[scores={st:mc_type=4}] st:mc_stick 22
 scoreboard players set @e[scores={st:mc_type=4}] st:mc_mcp 30
 scoreboard players set @e[scores={st:mc_type=4}] st:mc_srf 300
 # 伐木机
-scoreboard players set @e[scores={st:mc_type=5}] st:mc_stick 14
+scoreboard players set @e[scores={st:mc_type=5}] st:mc_stick 300
 # #[2]
-scoreboard players set @e[scores={st:mc_type=5}] st:mc_mcp 60
-scoreboard players set @e[scores={st:mc_type=5}] st:mc_srf 300
+scoreboard players set @e[scores={st:mc_type=5}] st:mc_mcp 2
+scoreboard players set @e[scores={st:mc_type=5}] st:mc_srf 600
 # 种植站
 scoreboard players set @e[scores={st:mc_type=7}] st:mc_stick 16
 # #[2]
@@ -41,8 +41,8 @@ scoreboard players set @e[scores={st:mc_type=7}] st:mc_srf 400
 # 虚空采矿机
 scoreboard players set @e[scores={st:mc_type=8}] st:mc_stick 200
 # #[2]
-scoreboard players set @e[scores={st:mc_type=8}] st:mc_mcp 256
-scoreboard players set @e[scores={st:mc_type=8}] st:mc_srf 3000
+scoreboard players set @e[scores={st:mc_type=8}] st:mc_mcp 320
+scoreboard players set @e[scores={st:mc_type=8}] st:mc_srf 3500
 # 压缩机
 scoreboard players set @e[scores={st:mc_type=9}] st:mc_stick 40
 # #[2]

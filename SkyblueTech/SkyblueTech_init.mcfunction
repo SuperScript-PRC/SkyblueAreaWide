@@ -25,4 +25,5 @@ scoreboard objectives add st:cache1 dummy st缓存1
 scoreboard objectives add st:cache2 dummy st缓存2
 scoreboard objectives add st:cache3 dummy st缓存3
 scoreboard objectives add st:heatgen_cd dummy st火力超时检测
+scoreboard objectives add st:iter dummy st遍历
 scoreboard players set hundred st:constant 100
