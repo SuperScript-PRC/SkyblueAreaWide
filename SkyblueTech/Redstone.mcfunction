@@ -6,7 +6,10 @@
 tag @e[tag=st.rs_trig] remove st.rs_trig
 # #(连锁)
 scoreboard players remove @e[scores={st:rs_cd=1..}] st:rs_cd 1
-tag @e[scores={st:rs_cd=0,st:runid_tmp=0,st:gen_tick=0,st:mc_type=1..}] add st.rs_trig
+# 反向检测槽位为空
+replaceitem entity @e[scores={st:rs_cd=0,st:gen_tick=0,st:mc_type=1..}] slot.inventory 0 keep minecraft:snowball 1 756
+tag @e[scores={st:rs_cd=0},hasitem={item=minecraft:snowball,slot=0,location=slot.inventory,data=756}] add st.rs_trig
+replaceitem entity @e[tag=st.trig] slot.inventory 0 air
 execute as @e[tag=st.rs_trig,scores={st:mc_type=2}] at @s run scoreboard players set @s st:rs_place 1
 execute as @e[tag=st.rs_trig,scores={st:mc_type=4}] at @s run scoreboard players set @s st:rs_place 1
 execute as @e[tag=st.rs_trig,scores={st:mc_type=9}] at @s run scoreboard players set @s st:rs_place 1
@@ -20,5 +23,3 @@ execute as @e[scores={st:rs_place=1}] at @s run setblock ~~2~ minecraft:target
 execute as @e[scores={st:rs_place=2}] at @s run setblock ~~3~ minecraft:target
 scoreboard players set @e[scores={st:rs_place=1..}] st:rs_place 0
 scoreboard players set @e[tag=st.rs_trig,scores={st:mc_type=1..}] st:rs_cd 20
-
-execute as 附魔台实体 at @s run tellraw @a[tag=robot] {"rawtext":[{"text":"st.mana"},{"selector":"@p(填展示魔力的目标)"},{"text":"mana:"},{"score":{"name":"@s","objective":"你那个魔力计分板"}}]}
