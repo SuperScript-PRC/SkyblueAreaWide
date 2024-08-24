@@ -66,7 +66,6 @@ scoreboard players set @e[scores={st:mc_type=13}] st:mc_stick 18
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_mcp 28
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 400
 # 加速卡
-
 execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick /= @s st:speedup
 # 节能卡
 execute as @e[tag=st.machine,scores={st:mc_mcp=1..}] run scoreboard players operation @s st:mc_mcp *= @s st:energyd

@@ -44,7 +44,7 @@ execute as @e[scores={st:mc_type=4,st:runid=1..},tag=st.tick_ok] at @s run plays
 execute as @e[scores={st:mc_type=4,st:runid=1..},tag=st.tick_ok] run replaceitem entity @s slot.inventory 0 minecraft:air
 # 电力挖石机
 execute as @e[scores={st:mc_type=11,st:runid=1},tag=st.tick_ok] at @s if block ~~3~ minecraft:cobblestone run setblock ~~3~ air 0 destroy
-execute as @e[scores={st:mc_type=11,st:runid=1},tag=st.tick_ok] at @s run tp @e[y=~3,r=1,name=圆石] @e[r=15,tag=st.collector]
+execute as @e[scores={st:mc_type=11,st:runid=1},tag=st.tick_ok] at @s run tp @e[y=~3,r=1,name=圆石] @e[r=15,tag=st.collector,c=1]
 # 感应炉
 # 配方表
 execute as @e[scores={st:mc_type=12,st:runid=1},tag=st.tick_ok] at @s run clone 123461 111 123457 123461 111 123457 ~~-1~
