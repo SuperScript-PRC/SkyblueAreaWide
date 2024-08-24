@@ -6,7 +6,7 @@
 tag @e[tag=st.dc_active] remove st.dc_active
 # #(连锁)
 # 发电机发电
-execute as @e[scores={st:gen_tick=1..}] at @s run scoreboard players operation @e[c=1,r=15,tag=st.dc] st:mc_rf += @s st:gen_rfp
+execute as @e[scores={st:gen_tick=1..}] at @s run scoreboard players operation @e[c=1,r=15,tag=st.dc,scores={st:mc_rf=..100000}] st:mc_rf += @s st:gen_rfp
 execute as @e[scores={st:gen_tick=1..,st:mc_type=!1}] at @s run scoreboard players remove @s st:gen_tick 1
 # 电池供能
 tag @e[tag=st.rf_lack] remove st.rf_lack

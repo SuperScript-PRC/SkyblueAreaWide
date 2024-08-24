@@ -1,6 +1,6 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
 #
-# 机器的各个属性
+# 机器的各个属性初始化
 #
 # #(循环)#{80}
 scoreboard players add @e[scores={st:mc_type=1..}] st:mc_rf 0
@@ -11,7 +11,7 @@ scoreboard players set @e[scores={st:mc_type=1..}] st:energyd 100
 scoreboard players set @e[scores={st:mc_type=1..}] st:speedup 1
 scoreboard players add @e[scores={st:mc_type=1..}] st:runid_tmp 0
 scoreboard players add @e[tag=st.dc] st:mc_rf 0
-scoreboard players set @e[tag=st.dc] st:mc_srf 50000
+scoreboard players set @e[tag=st.dc] st:mc_srf 100000
 execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=1}] run scoreboard players set @s st:speedup 2
 execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=2}] run scoreboard players set @s st:speedup 3
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=1}] run scoreboard players set @s st:energyd 75

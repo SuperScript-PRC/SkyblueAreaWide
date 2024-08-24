@@ -4,7 +4,7 @@
 #
 # #(循环)#{10}
 # 检测
-execute as @a[tag=!robot] at @s if block ~~-1~ minecraft:sand if block ~~-2~ minecraft:scaffolding run tag @s add is.sand
+execute as @a[tag=!robot] at @s if block ~~-1~ minecraft:sand ["sand_type":"normal"] if block ~~-2~ minecraft:scaffolding run tag @s add is.sand
 # #(连锁)[1]
 setblock ~~~1 minecraft:chain_command_block ["facing_direction"=3]
 say "THIS IS EMPTY"

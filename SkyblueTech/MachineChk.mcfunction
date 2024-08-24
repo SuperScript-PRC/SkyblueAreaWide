@@ -1,6 +1,6 @@
 # {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
 #
-# 机器多方科结构判定
+# 机器多方块结构判定
 #
 # #(循环)#{40}
 tag @e[tag=st.machine] remove st.machine
@@ -32,7 +32,7 @@ execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=1..}] at @s if bloc
 execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=1..}] at @s if block ~~1~ minecraft:dropper if blocks 123466 115 123456 123466 118 123458 ~~-1~-1 masked run scoreboard players set @s st:mc_type 2
 # 电炉=3
 execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=1..}] at @s if block ~~-1~ minecraft:target if block ~~-2~ hopper if block ~~-3~ furnace run scoreboard players set @s st:mc_type 3
-# 多功能炉=4
+# 熔炼炉=4
 execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=1..}] at @s if block ~~1~ dropper ["facing_direction"=0] if blocks 123468 115 123457 123470 118 123457 ~-1~-1~ masked run scoreboard players set @s st:mc_type 4
 execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=1..}] at @s if block ~~1~ dropper ["facing_direction"=0] if blocks 123471 115 123456 123471 118 123458 ~~-1~-1 masked run scoreboard players set @s st:mc_type 4
 # 伐木机=5
@@ -56,3 +56,6 @@ execute as @e[tag=st.machine,scores={st:mc_type=0,st:heater=1..,st:circuit=1..}]
 # 自动筛矿机=13
 execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123465 115 123461 123467 119 123461 ~-1~-2~ masked run scoreboard players set @s st:mc_type 13
 execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:scaffolding if block ~~1~ minecraft:dropper ["facing_direction"=0] if block ~~2~ minecraft:target if blocks 123468 115 123460 123468 119 123462 ~~-2~-1 masked run scoreboard players set @s st:mc_type 13
+# 电炉=14
+execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:copper_block if block ~~-2~ minecraft:hopper if block ~~-3~ minecraft:furnace run scoreboard players set @s st:mc_type 14
+execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:copper_block if block ~~-2~ minecraft:hopper if block ~~-3~ minecraft:lit_furnace run scoreboard players set @s st:mc_type 14

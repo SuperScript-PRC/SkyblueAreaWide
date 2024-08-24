@@ -81,6 +81,8 @@ execute as @e[scores={st:mc_type=13},hasitem={item=minecraft:sand,slot=0,quantit
 scoreboard players set @e[scores={st:mc_type=8}] st:runid_tmp 1
 # 伐木机
 scoreboard players set @e[scores={st:mc_type=5}] st:runid_tmp 1
+# 电炉
+
 # 最终tick统计
 # 如果加工中途物品发生更换, 即停止加工
 execute as @e[scores={st:runid_tmp=1..}] unless score @s st:runid_tmp = @s st:runid run scoreboard players set @s st:mc_tick 0

@@ -20,3 +20,5 @@ execute as @e[scores={st:rs_place=1}] at @s run setblock ~~2~ minecraft:target
 execute as @e[scores={st:rs_place=2}] at @s run setblock ~~3~ minecraft:target
 scoreboard players set @e[scores={st:rs_place=1..}] st:rs_place 0
 scoreboard players set @e[tag=st.rs_trig,scores={st:mc_type=1..}] st:rs_cd 20
+
+execute as 附魔台实体 at @s run tellraw @a[tag=robot] {"rawtext":[{"text":"st.mana"},{"selector":"@p(填展示魔力的目标)"},{"text":"mana:"},{"score":{"name":"@s","objective":"你那个魔力计分板"}}]}

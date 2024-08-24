@@ -1,4 +1,4 @@
-# {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "20"}
+# {"初始方向1": "z+", "初始方向2": "x+", "最大延伸": "25"}
 #
 # 机器运行一次
 #
@@ -20,7 +20,7 @@ execute as @e[scores={st:mc_type=2,st:runid=8},tag=st.tick_ok] at @s run clone 1
 execute as @e[scores={st:mc_type=2,st:runid=9},tag=st.tick_ok] at @s run clone 123457 111 123465 123457 111 123465  ~~-1~
 execute as @e[scores={st:mc_type=2,st:runid=10},tag=st.tick_ok] at @s run clone 123457 111 123466 123457 111 123466  ~~-1~
 execute as @e[scores={st:mc_type=2,st:runid=11},tag=st.tick_ok] at @s run clone 123457 111 123467 123457 111 123467  ~~-1~
-execute as @e[scores={st:mc_type=2,st:runid=12},tag=st.tick_ok] at @s run clone 123457 111 123468 123457w 111 123468  ~~-1~
+execute as @e[scores={st:mc_type=2,st:runid=12},tag=st.tick_ok] at @s run clone 123457 111 123468 123457 111 123468  ~~-1~
 execute as @e[scores={st:mc_type=2,st:runid=13},tag=st.tick_ok] at @s run clone 123457 111 123469 123457 111 123469  ~~-1~
 execute as @e[scores={st:mc_type=2,st:runid=14},tag=st.tick_ok] at @s run clone 123457 111 123470 123457 111 123470  ~~-1~
 execute as @e[scores={st:mc_type=2,st:runid=15},tag=st.tick_ok] at @s run clone 123457 111 123471 123457 111 123471  ~~-1~
