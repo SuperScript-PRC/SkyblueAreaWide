@@ -19,7 +19,7 @@ execute as @e[tag=st.rs_trig,scores={st:mc_type=13}] at @s run scoreboard player
 execute as @e[scores={st:rs_place=1}] at @s run setblock ~~2~ minecraft:redstone_block
 execute as @e[scores={st:rs_place=2}] at @s run setblock ~~3~ minecraft:redstone_block
 # #{2}
-execute as @e[scores={st:rs_place=1}] at @s run setblock ~~2~ minecraft:target
-execute as @e[scores={st:rs_place=2}] at @s run setblock ~~3~ minecraft:target
+execute as @e[scores={st:rs_place=1}] at @s if block ~~2~ minecraft:redstone_block run setblock ~~2~ minecraft:target
+execute as @e[scores={st:rs_place=2}] at @s if block ~~3~ minecraft:redstone_block run setblock ~~3~ minecraft:target
 scoreboard players set @e[scores={st:rs_place=1..}] st:rs_place 0
 scoreboard players set @e[tag=st.rs_trig,scores={st:mc_type=1..}] st:rs_cd 20
