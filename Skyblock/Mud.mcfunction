@@ -19,7 +19,7 @@ execute as @e[tag=is.mud,scores={is:random=25..27}] at @s run structure load 掉
 execute as @e[tag=is.mud,scores={is:random=28..40}] at @s run structure load 掉落物胡萝卜 ~~~
 execute as @e[tag=is.mud,scores={is:random=41..53}] at @s run structure load 掉落物马铃薯 ~~~
 execute as @e[tag=is.mud,scores={is:random=54..62}] at @s run structure load 掉落物甜浆果 ~~~
-execute as @e[tag=is.mud,scores={is:random=63..73}] at @s run structure load 掉落物黏土 ~~~
+execute as @e[tag=is.mud,scores={is:random=63..83}] at @s run structure load 掉落物黏土 ~~~
 execute as @e[tag=is.mud] at @s run setblock ~~-0.5~ air 0 destroy
 execute as @e[tag=is.mud] at @s run kill @e[y=~-1,r=1,name=泥巴]
 tag @a remove is.mud

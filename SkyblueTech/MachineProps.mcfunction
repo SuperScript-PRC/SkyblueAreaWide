@@ -70,3 +70,8 @@ execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreb
 # 节能卡
 execute as @e[tag=st.machine,scores={st:mc_mcp=1..}] run scoreboard players operation @s st:mc_mcp *= @s st:energyd
 execute as @e[tag=st.machine,scores={st:mc_mcp=1..}] run scoreboard players operation @s st:mc_mcp /= hundred st:constant
+
+
+
+
+execute as 玩家名 at @s run tellraw @a[tag=robot] {{ "rawtext": [ { "text": "quest.start" }, { "selector": "@s" }, { "text": "任务文件夹/任务名" } ] }}

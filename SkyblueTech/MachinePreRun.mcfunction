@@ -40,6 +40,8 @@ execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:raw_gold,data=0,slot
 execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:charcoal,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 15
 # 配方: 煤炭-碳粉
 execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:coal,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 15
+# 配方: 骨头-骨粉
+execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:bone,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 16
 # 感应炉
 # 配方: 铁粉-铁锭
 execute as @e[scores={st:mc_type=4},hasitem={item=minecraft:gunpowder,data=601,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 1

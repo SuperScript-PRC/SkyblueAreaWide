@@ -11,8 +11,8 @@ say "THIS IS EMPTY"
 setblock ~~~-1 air
 execute as @e[tag=is.sand] run scoreboard players random @s is:random 1 100
 execute as @e[tag=is.sand,scores={is:random=1..4}] at @s run structure load 掉落物石英 ~~~
-execute as @e[tag=is.sand,scores={is:random=5..7}] at @s run structure load 掉落物萤石 ~~~
-execute as @e[tag=is.sand,scores={is:random=8..9}] at @s run structure load 掉落物海带 ~~~
+execute as @e[tag=is.sand,scores={is:random=5..9}] at @s run structure load 掉落物萤石 ~~~
+execute as @e[tag=is.sand,scores={is:random=10..16}] at @s run structure load 掉落物海带 ~~~
 execute as @e[tag=is.sand] at @s run setblock ~~-1~ air 0 destroy
 execute as @e[tag=is.sand] at @s run kill @e[y=~-1,r=1,name=沙子]
 tag @a remove is.sand
