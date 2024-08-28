@@ -31,7 +31,7 @@ execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:copper_ingot,data=50
 # 配方: 钴锭-钴粉
 execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:netherbrick,data=513,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 11
 # 配方: 粗铁-2铁粉
-execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:minecraft:raw_iron,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 12
+execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:raw_iron,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 12
 # 配方: 粗铜-2铜粉
 execute as @e[scores={st:mc_type=2},hasitem={item=minecraft:raw_copper,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 13
 # 配方: 粗金-2金粉
