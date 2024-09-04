@@ -2,10 +2,10 @@
 #
 # 机器多方块结构判定
 #
-# #(循环)#{40}
+# #(循环)#{60}
 tag @e[tag=st.machine] remove st.machine
 # #(连锁)
-tag @e[type=minecraft:chest_minecart,hasitem={item=minecraft:redstone_torch,data=715}] add st.machine
+execute as @a at @s run tag @e[type=minecraft:chest_minecart,r=25,c=40,hasitem={item=minecraft:redstone_torch,data=715},tag=!st.machine] add st.machine
 scoreboard players set @e[tag=st.machine] st:circuit 0
 # 电路板等级
 scoreboard players set @e[tag=st.machine,hasitem={item=ward_armor_trim_smithing_template,data=701}] st:circuit 1
@@ -59,3 +59,5 @@ execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if bloc
 # 电炉=14
 execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:copper_block if block ~~-2~ minecraft:hopper if block ~~-3~ minecraft:furnace run scoreboard players set @s st:mc_type 14
 execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:copper_block if block ~~-2~ minecraft:hopper if block ~~-3~ minecraft:lit_furnace run scoreboard players set @s st:mc_type 14
+# 分子重组机=15
+execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=3..}] at @s if blocks 123456 115 123464 123458 120 123466 ~-1~-3~-1 masked run scoreboard players set @s st:mc_type 15

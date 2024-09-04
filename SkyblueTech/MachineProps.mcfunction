@@ -13,8 +13,8 @@ scoreboard players add @e[scores={st:mc_type=1..}] st:runid_tmp 0
 scoreboard players add @e[tag=st.dc] st:mc_rf 0
 scoreboard players set @e[tag=st.dc] st:mc_srf 100000
 # 加速卡 1x / 2x
-execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=1}] run scoreboard players set @s st:speedup 2
-execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=2}] run scoreboard players set @s st:speedup 3
+execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=1}] run scoreboard players set @s st:speedup 150
+execute as @e[tag=st.machine,hasitem={item=netherite_upgrade_smithing_template,data=710,quantity=2}] run scoreboard players set @s st:speedup 240
 # 节能卡 1x / 2x
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=1}] run scoreboard players set @s st:energyd 75
 execute as @e[tag=st.machine,hasitem={item=rib_armor_trim_smithing_template,data=711,quantity=2}] run scoreboard players set @s st:energyd 55
@@ -51,7 +51,7 @@ scoreboard players set @e[scores={st:mc_type=9}] st:mc_stick 40
 scoreboard players set @e[scores={st:mc_type=9}] st:mc_mcp 18
 scoreboard players set @e[scores={st:mc_type=9}] st:mc_srf 300
 # 地热发电机
-scoreboard players set @e[scores={st:mc_type=10}] st:gen_rfp 90
+scoreboard players set @e[scores={st:mc_type=10}] st:gen_rfp 120
 # 电力挖石机
 scoreboard players set @e[scores={st:mc_type=11}] st:mc_stick 20
 # #[2]
@@ -68,7 +68,8 @@ scoreboard players set @e[scores={st:mc_type=13}] st:mc_stick 18
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_mcp 28
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 400
 # 加速卡
-execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick /= @s st:speedup
+execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick *= @s st:speedup
+execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick /= hundred st:constant
 # 节能卡
 execute as @e[tag=st.machine,scores={st:mc_mcp=1..}] run scoreboard players operation @s st:mc_mcp *= @s st:energyd
 execute as @e[tag=st.machine,scores={st:mc_mcp=1..}] run scoreboard players operation @s st:mc_mcp /= hundred st:constant

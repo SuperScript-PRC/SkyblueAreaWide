@@ -28,5 +28,5 @@ execute as @e[scores={st:mc_type=6,st:heatgen_cd=0..40}] at @s if block ~~-2~ mi
 execute as @e[scores={st:mc_type=6,st:heatgen_cd=0..40}] at @s if block ~~-2~ minecraft:lit_furnace run scoreboard players set @s st:gen_tick 10
 # 地热发电机发电控制
 execute as @e[scores={st:mc_type=10,st:gen_tick=0},hasitem={item=minecraft:lava_bucket,data=0,slot=0,quantity=1,location=slot.inventory}] at @s run replaceitem block ~~-1~ slot.container 0 minecraft:bucket
-execute as @e[scores={st:mc_type=10,st:gen_tick=0},hasitem={item=minecraft:lava_bucket,data=0,slot=0,quantity=1,location=slot.inventory}] at @s run scoreboard players set @s st:gen_tick 400
+execute as @e[scores={st:mc_type=10,st:gen_tick=0},hasitem={item=minecraft:lava_bucket,data=0,slot=0,quantity=1,location=slot.inventory}] at @s run scoreboard players set @s st:gen_tick 700
 execute as @e[scores={st:mc_type=10,st:gen_tick=1..},hasitem={item=minecraft:lava_bucket,data=0,slot=0,quantity=1,location=slot.inventory}] at @s run replaceitem entity @s slot.inventory 0 air
