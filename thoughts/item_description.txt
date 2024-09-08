@@ -479,3 +479,18 @@ ID black_dye
 备注 §r
 备注 §r§7由木炭或煤炭打成的粉， 可用于材料的制作。
 备注 §9Skyblue Tech
+
+------------ new --------------
+§r§a青饲料
+
+§7由作物加工而成的饲料， 可用于自动动物农场。
+§9§oSkyblue Tech
+
+/give @s wheat_seeds 64 736 {"can_place_on":{"blocks":["hay_block"]}}
+-----------------
+§r§9自动饲料槽
+
+§7能自动补充饲料和水分到合适的量， 可用于自动动物农场。
+§9§oSkyblue Tech
+
+/give @s bowl 16 737 {"can_place_on":{"blocks":["hay_block"]}}

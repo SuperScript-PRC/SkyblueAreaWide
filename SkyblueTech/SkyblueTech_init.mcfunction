@@ -10,6 +10,7 @@ scoreboard objectives add st:mc_stick dummy st机器总tick
 scoreboard objectives add st:mc_rf dummy st机器储电
 scoreboard objectives add st:mc_srf dummy st机器储电上限
 scoreboard objectives add st:mc_mcp dummy st机器功率
+scoreboard objectives add st:mc_mcpdyn dummy st动态机器功率
 scoreboard objectives add st:gen_rfp dummy st发电机功率
 scoreboard objectives add st:gen_tick dummy st发电剩余
 scoreboard objectives add st:circuit dummy st电路板种类
