@@ -61,3 +61,5 @@ execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=2..}]
 execute as @e[tag=st.machine,scores={st:heater=1..,st:mc_type=0,st:circuit=2..}] at @s if block ~~-1~ minecraft:copper_block if block ~~-2~ minecraft:hopper if block ~~-3~ minecraft:lit_furnace run scoreboard players set @s st:mc_type 14
 # 分子重组机=15
 execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=3..}] at @s if blocks 123456 115 123464 123458 120 123466 ~-1~-3~-1 masked run scoreboard players set @s st:mc_type 15
+# 自动动物农场=16
+execute as @e[tag=st.machine,scores={st:mc_type=0,st:circuit=2..}] at @s if block ~~4~ minecraft:grass if blocks 123466 115 123464 123468 117 123466 ~-1~4~-1 masked run scoreboard players set @s st:mc_type 16

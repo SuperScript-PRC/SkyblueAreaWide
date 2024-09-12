@@ -71,6 +71,11 @@ scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 400
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_stick 1
 # #[2]
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 100000
+# 自动动物农场
+scoreboard players set @e[scores={st:mc_type=13}] st:mc_stick 1
+# #[2]
+scoreboard players set @e[scores={st:mc_type=13}] st:mc_mcp 28
+scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 400
 execute as @e[scores={st:mc_type=13}] at @s run scoreboard players operation @s st:mc_mcp = @s st:mc_mcpdyn
 # 加速卡
 execute as @e[tag=st.machine,scores={st:mc_stick=1..,st:speedup=1..}] run scoreboard players operation @s st:mc_stick *= @s st:speedup

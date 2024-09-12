@@ -11,6 +11,8 @@ scoreboard objectives add st:mc_rf dummy st机器储电
 scoreboard objectives add st:mc_srf dummy st机器储电上限
 scoreboard objectives add st:mc_mcp dummy st机器功率
 scoreboard objectives add st:mc_mcpdyn dummy st动态机器功率
+scoreboard objectives add st:mc_data1 dummy st机器数据1
+scoreboard objectives add st:mc_data2 dummy st机器数据2
 scoreboard objectives add st:gen_rfp dummy st发电机功率
 scoreboard objectives add st:gen_tick dummy st发电剩余
 scoreboard objectives add st:circuit dummy st电路板种类
@@ -21,7 +23,6 @@ scoreboard objectives add st:constant dummy st常量表
 scoreboard objectives add st:runid dummy st机器运行任务id
 scoreboard objectives add st:runid_tmp dummy st机器运行任务id
 scoreboard objectives add st:rs_cd dummy st红石激活冷却cd
-scoreboard objectives add st:rs_place dummy st红石放置位置
 scoreboard objectives add st:cache1 dummy st缓存1
 scoreboard objectives add st:cache2 dummy st缓存2
 scoreboard objectives add st:cache3 dummy st缓存3
