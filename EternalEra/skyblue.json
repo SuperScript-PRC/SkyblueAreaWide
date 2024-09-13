@@ -141,41 +141,51 @@
     },
     {
         "ID": "cooked_beef",
-        "名称": "§e烹饪牛排\n\n§f蛋白质III 脂质II\n§7按§e下蹲键§7食用\n§7更加美味， 且更利于消化\n§9§o材料",
+        "名称": "§e烹饪牛肉\n\n§f蛋白质III 脂质II\n§7按§e下蹲键§7食用\n§7更加美味， 且更利于消化\n§9§o材料",
         "特殊值": 515,
         "标签属性": {
             "can_place_on": {
-                "blocks": ["wool"]
+                "blocks": ["grass"]
             }
         }
     },
     {
         "ID": "cooked_porkchop",
-        "名称": "§e烹饪猪排\n\n§f蛋白质II 脂质III\n§7按§e下蹲键§7食用§r\n§7更加美味， 且更利于消化\n§9§o材料",
+        "名称": "§e烹饪猪肉\n\n§f蛋白质II 脂质III\n§7按§e下蹲键§7食用§r\n§7更加美味， 且更利于消化\n§9§o材料",
         "特殊值": 516,
         "标签属性": {
             "can_place_on": {
-                "blocks": ["wool"]
+                "blocks": ["grass"]
             }
         }
     },
     {
         "ID": "cooked_chicken",
         "名称": "§e烹饪鸡块\n\n§f蛋白质II 脂质I\n§7按§e下蹲键§7食用§r\n§7更加美味， 且更利于消化\n§9§o材料",
-        "特殊值": 516,
+        "特殊值": 517,
         "标签属性": {
             "can_place_on": {
-                "blocks": ["wool"]
+                "blocks": ["grass"]
             }
         }
     },
     {
-        "ID": "cooked_chicken",
-        "名称": "§e烹饪鸡块\n\n§f蛋白质II 脂质I\n§7按§e下蹲键§7食用§r\n§7更加美味， 且更利于消化\n§9§o材料",
-        "特殊值": 516,
+        "ID": "cooked_fish",
+        "名称": "§e烹鱼\n\n§f蛋白质III 维生素A\n§7按§e下蹲键§7食用§r\n§7更加美味， 且更利于消化\n§9§o材料",
+        "特殊值": 518,
         "标签属性": {
             "can_place_on": {
-                "blocks": ["wool"]
+                "blocks": ["water"]
+            }
+        }
+    },
+    {
+        "ID": "dried_kelp",
+        "名称": "§d水煮紫菜\n\n§f蛋白质I 糖类I 维生素C\n§7按§e下蹲键§7食用§r\n§7美味的紫菜， 也有治疗辐射的功效\n§9§o材料",
+        "特殊值": 519,
+        "标签属性": {
+            "can_place_on": {
+                "blocks": ["dirt"]
             }
         }
     }
