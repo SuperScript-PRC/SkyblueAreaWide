@@ -11,6 +11,8 @@ tag @e[tag=st.tick_ok] remove st.tick_ok
 execute as @e[scores={st:mc_tick=1..}] unless score @s st:mc_tick < @s st:mc_stick run tag @s add st.tick_ok
 # 电力挖石机
 execute as @e[tag=st.tick_ok,scores={st:mc_type=11}] at @s if block ~~3~ minecraft:cobblestone run setblock ~~3~ air 0 destroy
+# #[2]
+scoreboard players remove @e[tag=st.tick_ok,scores={st:mc_type=11}] st:mc_data1 1
 execute as @e[tag=st.tick_ok,scores={st:mc_type=11}] at @s run tp @e[y=~3,r=1,name=圆石] @e[r=15,tag=st.collector,c=1]
 # 伐木机
 execute as @e[tag=st.tick_ok,scores={st:mc_type=5}] at @s run tag @s add st.need_iter

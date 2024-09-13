@@ -20,3 +20,4 @@ execute as @a[tag=shift,hasitem={slot=slot.weapon.mainhand,item=paper,data=513},
 # #[2]
 title @a[tag=shift,hasitem={slot=slot.weapon.mainhand,item=paper,data=513}] actionbar §7使用了§f医用绷带§7， 感觉好多了..
 execute as @a[tag=shift,hasitem={slot=slot.weapon.mainhand,item=paper,data=513}] run clear @s paper 513 1
+

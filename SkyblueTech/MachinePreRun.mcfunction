@@ -21,4 +21,4 @@ scoreboard players set @e[scores={st:mc_type=8}] st:runid_tmp 1
 # 伐木机
 scoreboard players set @e[scores={st:mc_type=5}] st:runid_tmp 1
 # 电力挖石机
-scoreboard players set @e[scores={st:mc_type=11}] st:runid_tmp 1
+scoreboard players set @e[scores={st:mc_type=11,st:mc_data1=1..}] st:runid_tmp 1
