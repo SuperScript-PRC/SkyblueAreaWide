@@ -16,3 +16,4 @@ scoreboard objectives add sc:发烧 dummy
 scoreboard objectives add sc:中暑 dummy
 scoreboard objectives add sc:腹泻 dummy
 scoreboard objectives add sc:食品CD dummy
+scoreboard objectives add sc:环境温度 dummy

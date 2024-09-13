@@ -15,6 +15,3 @@ scoreboard players remove @a[tag=!sc.sick,scores={sc:感冒=1..}] sc:感冒 1
 scoreboard players remove @a[tag=!sc.sick,scores={sc:发烧=1..}] sc:发烧 1
 scoreboard players remove @a[tag=!sc.sick,scores={sc:中暑=1..}] sc:中暑 1
 scoreboard players remove @a[tag=!sc.sick,scores={sc:中毒=1..}] sc:中毒 1
-
-
-
