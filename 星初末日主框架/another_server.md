@@ -1,9 +1,10 @@
 **玩家属性**
 - 基本 (/1000)
    - 体力值       sc:体力
-   - 体温值       sc:体温
-   - 洁净度       sc:洁净
+   - 体温值       sc:体温        -100/[-20~20]/100
+   - 洁净度       sc:洁净        [600/800~1000]/1000
    - 水分值       sc:水分
+   - 盐分值       sc:盐分
    - 流血时间     sc:流血
    - 流血等级     sc:流血等级
    - 背包容量     sc:背包容量
@@ -24,9 +25,30 @@
 
 
 **物品**
-- 硬币
-- 金币
-- 干净的毛巾
-- 略显脏皱的毛巾
-- 灰暗的毛巾
-- 
+- 经济
+   - 硬币: iron_nugget
+   - 金币: gold_nugget
+- 日用品
+   - 干净的毛巾: field_masoned_banner_pattern
+      - 略显脏皱的毛巾
+      - 灰暗的毛巾
+      - 完全染脏的毛巾
+   - 洗涤粉: sugar
+   - 家用绷带: feature
+   - 医用绷带: paper
+- 药品
+   - 感冒灵: ghast_tear
+   - 降火胃片: turtle_shell_piece
+   - 辣椒素: fermented_spider_eye
+   - 西瓜霜薄荷糖片: laips_lazuli
+- 食品
+   - 烹饪牛肉: cooked_beef       pt=60 fat=40 
+   - 烹饪猪肉: cooked_porkchop   pt=45 fat=60
+   - 烹饪鸡块: cooked_chicken    pt=50 fat=30
+   - 烹鱼: cooked_fish           pt=50 vA=50
+   - 水煮紫菜: dried_kelp        pt=15 vC=50
+- 材料
+   - 橡胶: slime_ball
+   - 铁片: iron_ingot
+   - 砖板: brick
+   -
