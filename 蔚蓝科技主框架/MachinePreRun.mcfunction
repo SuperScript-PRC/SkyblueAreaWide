@@ -22,3 +22,5 @@ scoreboard players set @e[scores={st:mc_type=8}] st:runid_tmp 1
 scoreboard players set @e[scores={st:mc_type=5}] st:runid_tmp 1
 # 电力挖石机
 scoreboard players set @e[scores={st:mc_type=11,st:mc_data1=1..}] st:runid_tmp 1
+# 自动生物农场
+execute as @e[scores={st:mc_type=11,st:mc_data1=1..,st:mc_data1=100..}] at @s if entity @e[c=1,y=~5,r=1] run scoreboard players set @s st:runid_tmp 1

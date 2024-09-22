@@ -26,3 +26,4 @@ execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1
 # #[1]
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16,st:runid=5}] at @s run loot spawn ~~~ loot "entities/rabbit"
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s run tp @e[r=1,type=item] @e[c=1,tag=st.collector]
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s run scoreboard players remove @s st:mc_data1 100
