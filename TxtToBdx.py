@@ -1,4 +1,7 @@
-import bdx_work_shop, re, os, json
+import bdx_work_shop
+import re
+import os
+import json
 
 class MCCmd2Bdx:
     """# MCCmd To Bdx

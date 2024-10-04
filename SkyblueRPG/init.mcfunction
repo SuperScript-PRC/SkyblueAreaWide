@@ -2,6 +2,7 @@
 # #(脉冲)
 # 数据化生物
 scoreboard objectives add sr:ms_hp dummy
+# #(连锁)
 scoreboard objectives add sr:ms_type dummy
 scoreboard objectives add sr:ms_id dummy
 scoreboard objectives add sr:ms_uuid dummy
