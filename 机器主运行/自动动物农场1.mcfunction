@@ -6,24 +6,25 @@ setblock ~~~1 minecraft:chain_command_block 3
 1
 setblock ~~~-1 air
 # 鸡
-execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1,type=minecraft:chicken] run scoreboard players set @s st:runid 1
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1.5,type=minecraft:chicken] run scoreboard players set @s st:runid 1
 # #[1]
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16,st:runid=1}] at @s run loot spawn ~~~ loot "entities/chicken"
 # 牛
-execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1,type=minecraft:cow] run scoreboard players set @s st:runid 2
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1.5,type=minecraft:cow] run scoreboard players set @s st:runid 2
 # #[1]
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16,st:runid=2}] at @s run loot spawn ~~~ loot "entities/cow"
 # 羊
-execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1,type=minecraft:sheep] run scoreboard players set @s st:runid 3
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1.5,type=minecraft:sheep] run scoreboard players set @s st:runid 3
 # #[1]
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16,st:runid=3}] at @s run loot spawn ~~~ loot "entities/sheep"
 # 猪
-execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1,type=minecraft:pig] run scoreboard players set @s st:runid 4
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1.5,type=minecraft:pig] run scoreboard players set @s st:runid 4
 # #[1]
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16,st:runid=4}] at @s run loot spawn ~~~ loot "entities/pig"
 # 兔
-execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1,type=minecraft:rabbit] run scoreboard players set @s st:runid 5
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s if entity @e[y=~4,r=1.5,type=minecraft:rabbit] run scoreboard players set @s st:runid 5
 # #[1]
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16,st:runid=5}] at @s run loot spawn ~~~ loot "entities/rabbit"
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s run particle minecraft:crop_growth_emitter ~~2~
 execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s run tp @e[r=1,type=item] @e[c=1,tag=st.collector]
-execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s run scoreboard players remove @s st:mc_data1 100
+execute as @e[tag=st.tick_ok,scores={st:mc_type=16}] at @s run replaceitem entity @s slot.inventory 0 air

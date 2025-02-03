@@ -22,6 +22,7 @@ execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=13}] at @s run clone 
 execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=14}] at @s run clone 123457 111 123470 123457 111 123470 ~~-1~
 execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=15}] at @s run clone 123457 111 123471 123457 111 123471 ~~-1~
 execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=16}] at @s run clone 123457 111 123472 123457 111 123472 ~~-1~
+execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=17}] at @s run clone 123457 111 123479 123457 111 123479 ~~-1~
 # 收尾
 execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=1..}] at @s run particle minecraft:knockback_roar_particle ~~~
 execute as @e[tag=st.tick_ok,scores={st:mc_type=2,st:runid=1..}] at @s run playsound dig.sand @a[r=20]

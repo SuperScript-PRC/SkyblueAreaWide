@@ -16,4 +16,3 @@ scoreboard players remove @e[tag=st.tick_ok,scores={st:mc_type=11}] st:mc_data1 
 execute as @e[tag=st.tick_ok,scores={st:mc_type=11}] at @s run tp @e[y=~3,r=1,name=圆石] @e[r=15,tag=st.collector,c=1]
 # 伐木机
 execute as @e[tag=st.tick_ok,scores={st:mc_type=5}] at @s run tag @s add st.need_iter
-# 需要采矿机

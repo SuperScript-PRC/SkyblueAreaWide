@@ -24,4 +24,4 @@ execute as @e[tag=!st.empty,scores={st:mc_type=4},hasitem={item=gunpowder,data=6
 # 配方: 钢粉-钢锭
 execute as @e[tag=!st.empty,scores={st:mc_type=4},hasitem={item=gunpowder,data=604,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 9
 # 电力挖石机
-execute as @e[tag=!st.empty,scores={st:mc_type=11}] at @s if block ~~3~ cobblestone run scoreboard players set @s st:runid_tmp 1
+# execute as @e[tag=!st.empty,scores={st:mc_type=11}] at @s if block ~~3~ cobblestone run scoreboard players set @s st:runid_tmp 1

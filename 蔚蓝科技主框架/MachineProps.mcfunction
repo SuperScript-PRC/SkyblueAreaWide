@@ -8,7 +8,7 @@ scoreboard players add @e[scores={st:mc_type=1..}] st:mc_rf 0
 scoreboard players add @e[scores={st:mc_type=1..}] st:rs_cd 0
 scoreboard players add @e[scores={st:mc_type=1..}] st:gen_tick 0
 scoreboard players set @e[scores={st:mc_type=1..}] st:energyd 100
-scoreboard players set @e[scores={st:mc_type=1..}] st:speedup 1
+scoreboard players set @e[scores={st:mc_type=1..}] st:speedup 100
 scoreboard players add @e[scores={st:mc_type=1..}] st:runid_tmp 0
 scoreboard players add @e[tag=st.dc] st:mc_rf 0
 scoreboard players set @e[tag=st.dc] st:mc_srf 100000
@@ -41,9 +41,9 @@ scoreboard players set @e[scores={st:mc_type=7}] st:mc_stick 16
 scoreboard players set @e[scores={st:mc_type=7}] st:mc_mcp 42
 scoreboard players set @e[scores={st:mc_type=7}] st:mc_srf 400
 # 虚空采矿机
-scoreboard players set @e[scores={st:mc_type=8}] st:mc_stick 200
+scoreboard players set @e[scores={st:mc_type=8}] st:mc_stick 100
 # #[2]
-scoreboard players set @e[scores={st:mc_type=8}] st:mc_mcp 320
+scoreboard players set @e[scores={st:mc_type=8}] st:mc_mcp 360
 scoreboard players set @e[scores={st:mc_type=8}] st:mc_srf 3500
 # 压缩机
 scoreboard players set @e[scores={st:mc_type=9}] st:mc_stick 40
@@ -69,10 +69,10 @@ scoreboard players set @e[scores={st:mc_type=13}] st:mc_mcp 28
 scoreboard players set @e[scores={st:mc_type=13}] st:mc_srf 400
 # 分子重组机
 scoreboard players set @e[scores={st:mc_type=15}] st:mc_stick 1
-# #[2]
+# #[1]
 scoreboard players set @e[scores={st:mc_type=15}] st:mc_srf 100000
 # 自动动物农场
-scoreboard players set @e[scores={st:mc_type=16}] st:mc_stick 1
+scoreboard players set @e[scores={st:mc_type=16}] st:mc_stick 160
 # #[2]
 scoreboard players set @e[scores={st:mc_type=16}] st:mc_mcp 28
 scoreboard players set @e[scores={st:mc_type=16}] st:mc_srf 400

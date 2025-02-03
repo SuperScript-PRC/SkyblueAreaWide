@@ -39,3 +39,5 @@ execute as @e[tag=!st.empty,scores={st:mc_type=2},hasitem={item=charcoal,data=0,
 execute as @e[tag=!st.empty,scores={st:mc_type=2},hasitem={item=coal,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 15
 # 配方: 骨头-骨粉
 execute as @e[tag=!st.empty,scores={st:mc_type=2},hasitem={item=bone,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 16
+# 配方: 干草块x2-青饲料x2
+execute as @e[tag=!st.empty,scores={st:mc_type=2},hasitem={item=hayblock,data=0,slot=0,quantity=1,location=slot.inventory}] run scoreboard players set @s st:runid_tmp 17
