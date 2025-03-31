@@ -2,7 +2,7 @@ import random
 from dataclasses import dataclass
 from tooldelta import (
     Plugin,
-    Config,
+    cfg,
     TYPE_CHECKING,
     Utils,
     game_utils,
@@ -39,13 +39,13 @@ class CustomCrafting(Plugin):
     def __init__(self, frame) -> None:
         super().__init__(frame)
         CFG_STD = {
-            "配方": Config.AnyKeyValue(
-                Config.JsonList(
+            "配方": cfg.AnyKeyValue(
+                cfg.JsonList(
                     {
-                        "原料": Config.AnyKeyValue(
-                            {"ID": str, "数量": Config.PInt, "特殊值": int}
+                        "原料": cfg.AnyKeyValue(
+                            {"ID": str, "数量": cfg.PInt, "特殊值": int}
                         ),
-                        "产物": Config.AnyKeyValue({"ID": str, "数量": Config.PInt}),
+                        "产物": cfg.AnyKeyValue({"ID": str, "数量": cfg.PInt}),
                     }
                 )
             )
@@ -76,7 +76,7 @@ class CustomCrafting(Plugin):
                 ]
             }
         }
-        self.cfg, _ = Config.get_plugin_config_and_version(
+        self.cfg, _ = cfg.get_plugin_config_and_version(
             self.name, CFG_STD, CFG_DEFAULT, self.version
         )
         self.ListenPreload(self.on_def)
